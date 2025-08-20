@@ -1,5 +1,5 @@
-import { SearchUtils } from './utils';
-import { AdministrativeLevel, KenyaAdminError } from './types';
+import { SearchUtils } from './utils.js';
+import { AdministrativeLevel, KenyaAdminError } from './types.js';
 import type {
     ID,
     County,
@@ -14,7 +14,7 @@ import type {
     HierarchyNode,
     SearchResult,
     FullHierarchyResult,
-} from './types';
+} from './types.js';
 
 
 

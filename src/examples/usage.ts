@@ -1,8 +1,8 @@
 
-import  Geo254 from '../index';
+import  Geo254 from '../index.js';
 
 // import {  KenyaAdminError } from './types';
-import { AdministrativeLevel, type County, type FullHierarchyResult, type HierarchyNode, type ID, type SearchFilters, type SearchResult } from '../types';
+import { AdministrativeLevel, type County, type FullHierarchyResult, type HierarchyNode, type ID, type SearchFilters, type SearchResult } from '../types.js';
 
 
 // Sample data loading
