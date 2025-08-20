@@ -3,21 +3,22 @@
   "compilerOptions": {
 
         
-    "lib": ["ES2020"],
-    "moduleResolution": "node",
+    "lib": ["ES2020","esnext","es6", "dom"],
     "outDir": "./dist",
     "rootDir": "./src",
-
+    
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     // File Layout
     // "rootDir": "./src",
     // "outDir": "./dist",
-
+    
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
     "module": "nodenext",
+"moduleResolution": "NodeNext",
+    // "moduleResolution": "node",
     "target": "esnext",
     // "target": "ES2020",
     // "module": "CommonJS",
