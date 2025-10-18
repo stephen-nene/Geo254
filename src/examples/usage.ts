@@ -2,7 +2,7 @@
 import  Geo254 from '../index.js';
 
 // import {  KenyaAdminError } from './types';
-import { AdministrativeLevel, type County, type FullHierarchyResult, type HierarchyNode, type ID, type SearchFilters, type SearchResult } from '../types.js';
+import { AdministrativeLevel, type County, type FullHierarchyResult, type HierarchyNode, type ID, type SearchFilters, type SearchResult } from '../utils/types.js';
 
 
 // Sample data loading
@@ -15,7 +15,7 @@ async function demonstrateUsage() {
   const kad = new Geo254(sampleData);
 
   console.log('=== County Operations ===');
-  
+
   // Get all counties with pagination
   const counties = kad.getCounties({ limit: 5 });
   console.log(`Found ${counties.pagination.totalCount} counties`);
@@ -30,19 +30,19 @@ async function demonstrateUsage() {
   }
 
   console.log('\n=== Hierarchical Navigation ===');
-  
+
   // Navigate down the hierarchy
   if (nairobi) {
     const subCounties = kad.getSubCounties(nairobi.id, { limit: 3 });
     console.log(`Sub-counties in Nairobi:`);
-    
+
     for (const subCounty of subCounties.data) {
       console.log(`- ${subCounty.name}`);
-      
+
       const wards = kad.getWards(subCounty.id, { limit: 2 });
       for (const ward of wards.data) {
         console.log(`  - ${ward.name} (Ward)`);
-        
+
         const locations = kad.getLocations(ward.id, { limit: 1 });
         for (const location of locations.data) {
           console.log(`    - ${location.name} (Location)`);
@@ -52,7 +52,7 @@ async function demonstrateUsage() {
   }
 
   console.log('\n=== Search Operations ===');
-  
+
   // Simple search
   const searchResults = kad.search('Westlands', undefined, { limit: 5 });
   console.log(`\nSearch results for 'Westlands':`);
@@ -66,7 +66,7 @@ async function demonstrateUsage() {
     countyId: nairobi?.id,
     name: 'Karen'
   };
-  
+
   const advancedResults = kad.advancedSearch(filters);
   console.log(`\nAdvanced search results:`);
   advancedResults.data.forEach(result => {
@@ -74,11 +74,11 @@ async function demonstrateUsage() {
   });
 
   console.log('\n=== Hierarchy Analysis ===');
-  
+
   // Find a village and trace its hierarchy
   const allResults = kad.search('', undefined, { limit: 100 });
   const village = allResults.data.find(r => r.type === AdministrativeLevel.VILLAGE);
-  
+
   if (village) {
     const hierarchy = kad.getFullHierarchy(village.entity.id);
     if (hierarchy) {
@@ -100,7 +100,7 @@ async function demonstrateUsage() {
   }
 
   console.log('\n=== Statistical Analysis ===');
-  
+
   // Population statistics
   const popStats = kad.getPopulationStats(AdministrativeLevel.COUNTY);
   console.log('\nCounty Population Statistics:');
@@ -108,7 +108,7 @@ async function demonstrateUsage() {
   console.log(`Average Population: ${Math.round(popStats.average).toLocaleString()}`);
   console.log(`Min Population: ${popStats.min.toLocaleString()}`);
   console.log(`Max Population: ${popStats.max.toLocaleString()}`);
-  
+
   console.log('\nPopulation Distribution:');
   Object.entries(popStats.distribution).forEach(([range, count]) => {
     console.log(`${range}: ${count} counties`);
@@ -123,7 +123,7 @@ async function demonstrateUsage() {
   console.log(`Largest County: ${areaStats.max} km²`);
 
   console.log('\n=== Validation ===');
-  
+
   // Validate hierarchy relationships
   if (village) {
     const isValid = kad.validateHierarchy(village.entity.id);
@@ -131,7 +131,7 @@ async function demonstrateUsage() {
   }
 
   console.log('\n=== Data Management ===');
-  
+
   // Export current data
   const exportedData = kad.exportData();
   console.log(`Exported ${exportedData.length} counties`);

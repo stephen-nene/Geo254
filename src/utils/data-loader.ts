@@ -1,5 +1,5 @@
 // src/utils/data-loader.ts
-import { County } from '../types.js';
+import { County } from './types.js';
 import * as fs from 'fs';
 import * as path from 'path';
 
@@ -12,11 +12,11 @@ export class DataLoader {
       const absolutePath = path.resolve(filePath);
       const fileContent = await fs.promises.readFile(absolutePath, 'utf-8');
       const data = JSON.parse(fileContent);
-      
+
       if (!Array.isArray(data)) {
         throw new Error('Data must be an array of counties');
       }
-      
+
       return this.validateAndNormalize(data);
     } catch (error) {
       throw new Error(`Failed to load data from ${filePath}: ${error.message}`);
@@ -32,13 +32,13 @@ export class DataLoader {
       if (!response.ok) {
         throw new Error(`HTTP ${response.status}: ${response.statusText}`);
       }
-      
+
       const data = await response.json();
-      
+
       if (!Array.isArray(data)) {
         throw new Error('Data must be an array of counties');
       }
-      
+
       return this.validateAndNormalize(data);
     } catch (error) {
       throw new Error(`Failed to load data from ${url}: ${error.message}`);

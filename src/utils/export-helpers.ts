@@ -1,5 +1,5 @@
 // src/utils/export-helpers.ts
-import type { County, AdministrativeLevel } from '../types.js';
+import type { County, AdministrativeLevel } from './types.js';
 
 export class ExportHelpers {
   /**
@@ -7,7 +7,7 @@ export class ExportHelpers {
    */
   static toCsv(counties: County[], level: AdministrativeLevel = AdministrativeLevel.COUNTY): string {
     const rows: string[] = [];
-    
+
     switch (level) {
       case AdministrativeLevel.COUNTY:
         rows.push('ID,Name,Capital,Code,Area,Population');
@@ -22,7 +22,7 @@ export class ExportHelpers {
           ].join(','));
         });
         break;
-      
+
       case AdministrativeLevel.VILLAGE:
         rows.push('ID,Name,Population,Latitude,Longitude,County,SubCounty,Ward,Location,SubLocation');
         counties.forEach(county => {
@@ -43,7 +43,7 @@ export class ExportHelpers {
         });
         break;
     }
-    
+
     return rows.join('\n');
   }
 
@@ -52,7 +52,7 @@ export class ExportHelpers {
    */
   static toGeoJson(counties: County[]): any {
     const features: any[] = [];
-    
+
     counties.forEach(county => {
       this.traverseForVillages(county, (village, hierarchy) => {
         if (village.coordinates) {
@@ -88,7 +88,7 @@ export class ExportHelpers {
    */
   static toFlatHierarchy(counties: County[]): any[] {
     const flat: any[] = [];
-    
+
     counties.forEach(county => {
       // Add county
       flat.push({

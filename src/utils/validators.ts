@@ -1,5 +1,5 @@
 // src/utils/validators.ts
-import type { County, Village, AdministrativeLevel } from '../types.js';
+import type { County, Village, AdministrativeLevel } from './types.js';
 
 export class DataValidators {
   /**
@@ -8,7 +8,7 @@ export class DataValidators {
   static validateDataStructure(counties: County[]): ValidationResult {
     const errors: string[] = [];
     const warnings: string[] = [];
-    
+
     if (!Array.isArray(counties)) {
       errors.push('Data must be an array of counties');
       return { isValid: false, errors, warnings };
@@ -126,7 +126,7 @@ export class DataValidators {
     }
 
     if (village.coordinates) {
-      if (typeof village.coordinates.lat !== 'number' || 
+      if (typeof village.coordinates.lat !== 'number' ||
           typeof village.coordinates.lng !== 'number') {
         errors.push(`Village ${village.name} in ${context}: Invalid coordinates format`);
       } else {
@@ -164,13 +164,13 @@ export class DataValidators {
     counties.forEach(county => {
       county.sub_counties.forEach(subCounty => {
         allSubCountyIds.add(subCounty.id);
-        
+
         subCounty.wards.forEach(ward => {
           allWardIds.add(ward.id);
-          
+
           ward.locations?.forEach(location => {
             allLocationIds.add(location.id);
-            
+
             location.sub_locations?.forEach(subLocation => {
               allSubLocationIds.add(subLocation.id);
             });

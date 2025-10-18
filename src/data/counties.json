@@ -1,0 +1,425 @@
+[
+  {
+    "id": "001",
+    "name": "Mombasa",
+    "capital": "Mombasa",
+    "code": 1,
+    "population": 1208333,
+    "area": 229.7,
+    "sub_counties": []
+  },
+  {
+    "id": "002",
+    "name": "Kwale",
+    "capital": "Kwale",
+    "code": 2,
+    "population": 866820,
+    "area": 8270.3,
+    "sub_counties": []
+  },
+  {
+    "id": "003",
+    "name": "Kilifi",
+    "capital": "Kilifi",
+    "code": 3,
+    "population": 1453787,
+    "area": 12245.9,
+    "sub_counties": []
+  },
+  {
+    "id": "004",
+    "name": "Tana River",
+    "capital": "Hola",
+    "code": 4,
+    "population": 315943,
+    "area": 35375.8,
+    "sub_counties": []
+  },
+  {
+    "id": "005",
+    "name": "Lamu",
+    "capital": "Lamu",
+    "code": 5,
+    "population": 143920,
+    "area": 6497.7,
+    "sub_counties": []
+  },
+  {
+    "id": "006",
+    "name": "Taita-Taveta",
+    "capital": "Voi",
+    "code": 6,
+    "population": 340671,
+    "area": 17083.9,
+    "sub_counties": []
+  },
+  {
+    "id": "007",
+    "name": "Garissa",
+    "capital": "Garissa",
+    "code": 7,
+    "population": 841353,
+    "area": 45720.2,
+    "sub_counties": []
+  },
+  {
+    "id": "008",
+    "name": "Wajir",
+    "capital": "Wajir",
+    "code": 8,
+    "population": 781263,
+    "area": 55840.6,
+    "sub_counties": []
+  },
+  {
+    "id": "009",
+    "name": "Mandera",
+    "capital": "Mandera",
+    "code": 9,
+    "population": 1025756,
+    "area": 26744.7,
+    "sub_counties": []
+  },
+  {
+    "id": "010",
+    "name": "Marsabit",
+    "capital": "Marsabit",
+    "code": 10,
+    "population": 459785,
+    "area": 66923.1,
+    "sub_counties": []
+  },
+  {
+    "id": "011",
+    "name": "Isiolo",
+    "capital": "Isiolo",
+    "code": 11,
+    "population": 268002,
+    "area": 25336.1,
+    "sub_counties": []
+  },
+  {
+    "id": "012",
+    "name": "Meru",
+    "capital": "Meru",
+    "code": 12,
+    "population": 1545714,
+    "area": 6930.1,
+    "sub_counties": []
+  },
+  {
+    "id": "013",
+    "name": "Tharaka-Nithi",
+    "capital": "Kathwana",
+    "code": 13,
+    "population": 393177,
+    "area": 2609.5,
+    "sub_counties": []
+  },
+  {
+    "id": "014",
+    "name": "Embu",
+    "capital": "Embu",
+    "code": 14,
+    "population": 608599,
+    "area": 2555.9,
+    "sub_counties": []
+  },
+  {
+    "id": "015",
+    "name": "Kitui",
+    "capital": "Kitui",
+    "code": 15,
+    "population": 1136187,
+    "area": 24385.1,
+    "sub_counties": []
+  },
+  {
+    "id": "016",
+    "name": "Machakos",
+    "capital": "Machakos",
+    "code": 16,
+    "population": 1421932,
+    "area": 5952.9,
+    "sub_counties": []
+  },
+  {
+    "id": "017",
+    "name": "Makueni",
+    "capital": "Wote",
+    "code": 17,
+    "population": 987653,
+    "area": 8008.9,
+    "sub_counties": []
+  },
+  {
+    "id": "018",
+    "name": "Nyandarua",
+    "capital": "Ol Kalou",
+    "code": 18,
+    "population": 638289,
+    "area": 3304.0,
+    "sub_counties": []
+  },
+  {
+    "id": "019",
+    "name": "Nyeri",
+    "capital": "Nyeri",
+    "code": 19,
+    "population": 759164,
+    "area": 2361.0,
+    "sub_counties": []
+  },
+  {
+    "id": "020",
+    "name": "Kirinyaga",
+    "capital": "Kerugoya",
+    "code": 20,
+    "population": 610411,
+    "area": 1205.4,
+    "sub_counties": []
+  },
+  {
+    "id": "021",
+    "name": "Murang'a",
+    "capital": "Murang'a",
+    "code": 21,
+    "population": 1056640,
+    "area": 2325.8,
+    "sub_counties": []
+  },
+  {
+    "id": "022",
+    "name": "Kiambu",
+    "capital": "Kiambu",
+    "code": 22,
+    "population": 2417735,
+    "area": 2449.2,
+    "sub_counties": []
+  },
+  {
+    "id": "023",
+    "name": "Turkana",
+    "capital": "Lodwar",
+    "code": 23,
+    "population": 926976,
+    "area": 68680.3,
+    "sub_counties": []
+  },
+  {
+    "id": "024",
+    "name": "West Pokot",
+    "capital": "Kapenguria",
+    "code": 24,
+    "population": 621241,
+    "area": 9169.4,
+    "sub_counties": []
+  },
+  {
+    "id": "025",
+    "name": "Samburu",
+    "capital": "Maralal",
+    "code": 25,
+    "population": 310327,
+    "area": 20182.5,
+    "sub_counties": []
+  },
+  {
+    "id": "026",
+    "name": "Trans-Nzoia",
+    "capital": "Kitale",
+    "code": 26,
+    "population": 990341,
+    "area": 2495.5,
+    "sub_counties": []
+  },
+  {
+    "id": "027",
+    "name": "Uasin Gishu",
+    "capital": "Eldoret",
+    "code": 27,
+    "population": 1163186,
+    "area": 3345.2,
+    "sub_counties": []
+  },
+  {
+    "id": "028",
+    "name": "Elgeyo-Marakwet",
+    "capital": "Iten",
+    "code": 28,
+    "population": 454480,
+    "area": 3049.7,
+    "sub_counties": []
+  },
+  {
+    "id": "029",
+    "name": "Nandi",
+    "capital": "Kapsabet",
+    "code": 29,
+    "population": 885711,
+    "area": 2884.4,
+    "sub_counties": []
+  },
+  {
+    "id": "030",
+    "name": "Baringo",
+    "capital": "Kabarnet",
+    "code": 30,
+    "population": 666763,
+    "area": 11015.3,
+    "sub_counties": []
+  },
+  {
+    "id": "031",
+    "name": "Laikipia",
+    "capital": "Rumuruti",
+    "code": 31,
+    "population": 518560,
+    "area": 9462.4,
+    "sub_counties": []
+  },
+  {
+    "id": "032",
+    "name": "Nakuru",
+    "capital": "Nakuru",
+    "code": 32,
+    "population": 2162202,
+    "area": 7509.5,
+    "sub_counties": []
+  },
+  {
+    "id": "033",
+    "name": "Narok",
+    "capital": "Narok",
+    "code": 33,
+    "population": 1157873,
+    "area": 17944.1,
+    "sub_counties": []
+  },
+  {
+    "id": "034",
+    "name": "Kajiado",
+    "capital": "Kajiado",
+    "code": 34,
+    "population": 1117840,
+    "area": 21292.7,
+    "sub_counties": []
+  },
+  {
+    "id": "035",
+    "name": "Kericho",
+    "capital": "Kericho",
+    "code": 35,
+    "population": 901777,
+    "area": 2454.5,
+    "sub_counties": []
+  },
+  {
+    "id": "036",
+    "name": "Bomet",
+    "capital": "Bomet",
+    "code": 36,
+    "population": 875689,
+    "area": 1997.9,
+    "sub_counties": []
+  },
+  {
+    "id": "037",
+    "name": "Kakamega",
+    "capital": "Kakamega",
+    "code": 37,
+    "population": 1867579,
+    "area": 3033.8,
+    "sub_counties": []
+  },
+  {
+    "id": "038",
+    "name": "Vihiga",
+    "capital": "Vihiga",
+    "code": 38,
+    "population": 590013,
+    "area": 531.5,
+    "sub_counties": []
+  },
+  {
+    "id": "039",
+    "name": "Bungoma",
+    "capital": "Bungoma",
+    "code": 39,
+    "population": 1670570,
+    "area": 2206.9,
+    "sub_counties": []
+  },
+  {
+    "id": "040",
+    "name": "Busia",
+    "capital": "Busia",
+    "code": 40,
+    "population": 893681,
+    "area": 1628.4,
+    "sub_counties": []
+  },
+  {
+    "id": "041",
+    "name": "Siaya",
+    "capital": "Siaya",
+    "code": 41,
+    "population": 993183,
+    "area": 2496.1,
+    "sub_counties": []
+  },
+  {
+    "id": "042",
+    "name": "Kisumu",
+    "capital": "Kisumu",
+    "code": 42,
+    "population": 1155574,
+    "area": 2009.5,
+    "sub_counties": []
+  },
+  {
+    "id": "043",
+    "name": "Homa Bay",
+    "capital": "Homa Bay",
+    "code": 43,
+    "population": 1131950,
+    "area": 3154.7,
+    "sub_counties": []
+  },
+  {
+    "id": "044",
+    "name": "Migori",
+    "capital": "Migori",
+    "code": 44,
+    "population": 1116436,
+    "area": 2586.4,
+    "sub_counties": []
+  },
+  {
+    "id": "045",
+    "name": "Kisii",
+    "capital": "Kisii",
+    "code": 45,
+    "population": 1266860,
+    "area": 1317.9,
+    "sub_counties": []
+  },
+  {
+    "id": "046",
+    "name": "Nyamira",
+    "capital": "Nyamira",
+    "code": 46,
+    "population": 605576,
+    "area": 899.5,
+    "sub_counties": []
+  },
+  {
+    "id": "047",
+    "name": "Nairobi",
+    "capital": "Nairobi",
+    "code": 47,
+    "population": 4397073,
+    "area": 696.1,
+    "sub_counties": []
+  }
+]
